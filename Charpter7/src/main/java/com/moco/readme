@@ -1,0 +1,26 @@
+java -jar moco-runner-0.12.0-standalone.jar http -p 12306 -c foo.json
+java -jar moco-runner-0.12.0-standalone.jar http -p 12306 -c cookies.json
+http
+-p 端口号
+-c json配置文件路径
+
+http://localhost:12306/hello
+
+
+[14 known properties: "method", "headers", "json", "factory",
+"uri", "text", "cookies", "xpaths", "json_paths", "version",
+"file", "queries", "path_resource", "forms"]
+
+[7 known properties: "response", "redirectTo", "mount", "proxy", "request", "on", "resource"]
+
+
+"uri":"/test/post/with/param"
+"method":"get"
+"method":"post"
+"json"
+
+
+get参数："queries"
+post参数："forms"
+cookies&post：
+"json":

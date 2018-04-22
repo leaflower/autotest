@@ -1,0 +1,26 @@
+[
+  {
+    "description": "模拟一个没有参数的get请求，访问浏览器http://localhost:12321/get",
+    "request": {
+      "uri": "/get",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是一个没有参数的get请求"
+    }
+  },
+  {
+    "description": "模拟一个带参数的get请求，访问浏览器http://localhost:12321/getwithparam?name=lily&age=18",
+    "request": {
+      "uri": "/getwithparam",
+      "method": "get",
+      "queries":{
+        "name":"lily",
+        "age":"18"
+      }
+    },
+    "response": {
+      "text": "这是一个带参数的get请求"
+    }
+  }
+]

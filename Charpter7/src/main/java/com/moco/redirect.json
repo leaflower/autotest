@@ -1,0 +1,25 @@
+[
+  {
+    "description": "模拟一个重定向到百度的请求,访问浏览器http://localhost:12321/redirect",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "https://www.baidu.com/"
+  },
+  {
+    "description": "模拟一个重定向到自己的网页上,访问浏览器http://localhost:12321/redirect/topath",
+    "request": {
+      "uri": "/redirect/topath"
+    },
+    "redirectTo": "/redirect/new"
+  },
+  {
+    "description": "这是被重定向的请求",
+    "request": {
+      "uri": "/redirect/new"
+    },
+    "response": {
+      "text": "重定向成功啦"
+    }
+  }
+]
