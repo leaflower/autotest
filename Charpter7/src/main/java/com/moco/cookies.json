@@ -9,7 +9,7 @@
       "cookies":{
         "login":"true"
       },
-      "text":"Congratuations to get cookies sucess!"
+      "text":"Congratuations to get cookies!"
     }
   },
   {
@@ -26,12 +26,30 @@
     }
   },
   {
+    "description": "模拟一个带参数的get请求，访问浏览器http://localhost:12321/getwithparam?name=lily&age=18",
+    "request": {
+      "uri": "/get/with/param",
+      "method": "get",
+      "queries":{
+        "name":"lily",
+        "age":"18"
+      }
+    },
+    "response": {
+      "text": "这是一个带参数的get请求"
+    }
+  },
+  {
     "description": "模拟一个带cookies的post请求:HTTP请求-postwithcookies",
     "request": {
       "uri": "/post/with/cookies",
       "method": "post",
       "cookies":{
         "login":"true"
+      },
+      "headers": {
+        "accept": "application/xml;application/json;charset=utf-8",
+        "content-type": "application/json"
       },
       "json":{
         "name":"lily",
