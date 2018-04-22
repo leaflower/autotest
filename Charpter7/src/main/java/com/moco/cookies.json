@@ -1,6 +1,6 @@
 [
   {
-    "description":"这是一个会泛红cookies信息的get请求",
+    "description":"这是一个会获取cookies信息的get请求",
     "request":{
       "uri":"/getCookies",
       "method":"get"
