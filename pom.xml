@@ -21,7 +21,12 @@
         <module>Chapter10</module>
         <module>Chapter9</module>
         <module>Charpter7</module>
+        <module>Chapter11</module>
     </modules>
+
+    <properties>
+        <swagger.version>2.6.1</swagger.version>
+    </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.github.dreamhead/moco-core -->
@@ -64,6 +69,18 @@
             <artifactId>extentreports</artifactId>
             <version>3.1.5</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
 
 
